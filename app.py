@@ -26,7 +26,7 @@ def configure_gemini():
 is_configured = configure_gemini()
 
 # Use Gemini 1.5 Flash for fast, lightweight responses
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel("gemini-pro")
 
 # --- Helper Function for Generation ---
 def generate_response(prompt):
