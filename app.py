@@ -13,18 +13,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-
-# --- Initialize Gemini ---
-@st.cache_resource
-def configure_gemini():
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        return False
-    genai.configure(api_key=api_key)
-    return True
-
-is_configured = configure_gemini()
-
 # Use Gemini 1.5 Flash for fast, lightweight responses
 model = genai.GenerativeModel("gemini-pro")
 
