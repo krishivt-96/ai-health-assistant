@@ -60,7 +60,7 @@ This project is fully containerized and optimized to be lightweight (<1MB source
 
 2. **Deploy the container**:
    Run the following command in the same directory as the `Dockerfile`.
-   Replace `your_actual_api_key_here` with your real Gemini API key.
+   Replace `AIzaSyDz6jZCZGn4qDjT3BbRsp5b6hDd8RWo1sI` with your real Gemini API key.
 
    ```bash
    gcloud run deploy ai-health-assistant \
