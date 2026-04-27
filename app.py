@@ -6,24 +6,15 @@ st.title("AI Food & Health Assistant")
 
 st.subheader("Personalized Meal Planner")
 
-goal = st.text_input("Goal (e.g., Weight loss, Muscle gain)")
+goal = st.text_input("Goal")
 budget = st.selectbox("Budget", ["Low", "Medium", "High"])
-diet = st.selectbox("Dietary Preference", ["None", "Keto", "Vegan"])
-allergy = st.text_input("Allergies / Restrictions")
+diet = st.selectbox("Diet", ["None", "Keto", "Vegan"])
+allergy = st.text_input("Allergies")
 
 if st.button("Generate Plan"):
-    st.success("Here’s your plan:")
-    
-    st.markdown("""
-    ### 🥗 Health Impact
-    Balanced and aligned with your goal.
+    st.success("Working 🎉")
 
-    ### 🍽 What to Eat
-    - Grilled chicken / paneer  
-    - Rice + veggies  
-    - Fruits  
-
-    ### ⚖️ Tips
-    - Maintain protein intake  
-    - Avoid junk food  
-    """)
+    st.write("Sample Meal Plan:")
+    st.write("- Rice + Dal")
+    st.write("- Eggs / Paneer")
+    st.write("- Fruits")
