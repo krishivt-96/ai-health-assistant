@@ -18,14 +18,18 @@ model = genai.GenerativeModel("gemini-pro")
 
 # --- Helper Function for Generation ---
 def generate_response(prompt):
-    if not is_configured:
-        return "⚠️ Please set your `GEMINI_API_KEY` environment variable to generate responses."
-    try:
-        response = model.generate_content(prompt)
-        return response.text
-    except Exception as e:
-        return f"❌ Error generating response: {e}"
+    return f"""
+### Health Impact
+Your current choice supports your goal.
 
+### What to Eat Next
+- Grilled chicken with veggies  
+- Oats with peanut butter  
+
+### How to Balance Diet
+- Maintain protein intake  
+- Control portion sizes
+"""
 # --- UI Layout ---
 st.title("🥗 AI Food & Health Assistant")
 st.markdown("**Your smart companion for better food choices and personalized health advice.**")
